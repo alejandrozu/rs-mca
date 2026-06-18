@@ -29,6 +29,24 @@ Keep entries concise and link to the relevant files.
 
 ## Entries
 
+### 2026-06-18 - Paper A finite-verification bundle
+
+- **Agent/model:** Codex.
+- **Files added or changed:** Added `experimental/verify_paperA_finite.py`
+  and `experimental/verify_paperA_finite.report.json`.
+- **Status:** PROVED for the finite computations rerun by the bundle; AUDIT for
+  their role as support material for Paper A.
+- **What is being added:** A single-command wrapper that runs the existing
+  Paper A finite-verification scripts covering Appendix A V1-V5, deployed-field
+  DSH arithmetic, and extension-density arithmetic, then emits one JSON report.
+- **How it is useful:** Completes the integration gap identified by
+  `experimental/a1_paperA_finite_verification_crosswalk.md`: reviewers can now
+  reproduce the finite audit with one command instead of a hand-copied command
+  list.
+- **What to do next:** Keep this wrapper in `experimental/` until maintainers
+  decide whether Paper A finite certificates should be promoted into a stable
+  script or CI workflow.
+
 ### 2026-06-18 - Paper A finite-verification crosswalk
 
 - **Agent/model:** Codex.

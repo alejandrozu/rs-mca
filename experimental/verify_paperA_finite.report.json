@@ -1,0 +1,357 @@
+{
+  "checks": [
+    {
+      "command": [
+        "python",
+        "experimental/deployed_dsh_certificate.py",
+        "--format",
+        "json"
+      ],
+      "description": "deployed-field DSH divisor arithmetic",
+      "exit_code": 0,
+      "id": "A1-deployed-dsh",
+      "ok": true,
+      "paper_item": "main(a)",
+      "stderr_excerpt": [],
+      "summary": {
+        "all_qualify": true,
+        "row_count": 18
+      }
+    },
+    {
+      "command": [
+        "python",
+        "experimental/extension_full_density_certificate.py",
+        "--format",
+        "json"
+      ],
+      "description": "Fermat/Proth extension full-density arithmetic",
+      "exit_code": 0,
+      "id": "A1-extension-full-density",
+      "ok": true,
+      "paper_item": "extension/tower",
+      "stderr_excerpt": [],
+      "summary": {
+        "all_bases_ok": true,
+        "all_rates_ok": true,
+        "base_row_count": 5,
+        "rate_row_count": 20
+      }
+    },
+    {
+      "command": [
+        "python",
+        "experimental/goldilocks_density_certificate.py",
+        "--format",
+        "json"
+      ],
+      "description": "Goldilocks extension-density arithmetic",
+      "exit_code": 0,
+      "id": "A1-goldilocks-density",
+      "ok": true,
+      "paper_item": "extension/tower",
+      "stderr_excerpt": [],
+      "summary": {
+        "all_rows_ok": true,
+        "claimed_goldilocks_bounds_ok": true,
+        "row_count": 4
+      }
+    },
+    {
+      "command": [
+        "python",
+        "experimental/restricted_sum_dp.py",
+        "--p",
+        "17",
+        "--subgroup-order",
+        "8",
+        "--r",
+        "3",
+        "--expect-size",
+        "16",
+        "--format",
+        "json"
+      ],
+      "description": "Fermat quotient coverage p=17, r=M/2+1=3",
+      "exit_code": 0,
+      "id": "V1-p17-r3",
+      "ok": true,
+      "paper_item": "V1",
+      "stderr_excerpt": [],
+      "summary": {
+        "expected_size": 16,
+        "full_coverage": false,
+        "missing_values_sample": [
+          0
+        ],
+        "missing_zero_expected": true,
+        "restricted_sum_size": 16
+      }
+    },
+    {
+      "command": [
+        "python",
+        "experimental/restricted_sum_dp.py",
+        "--p",
+        "17",
+        "--subgroup-order",
+        "8",
+        "--r",
+        "5",
+        "--expect-size",
+        "16",
+        "--format",
+        "json"
+      ],
+      "description": "Fermat quotient coverage p=17, r=M+1=5",
+      "exit_code": 0,
+      "id": "V1-p17-r5",
+      "ok": true,
+      "paper_item": "V1",
+      "stderr_excerpt": [],
+      "summary": {
+        "expected_size": 16,
+        "full_coverage": false,
+        "missing_values_sample": [
+          0
+        ],
+        "missing_zero_expected": true,
+        "restricted_sum_size": 16
+      }
+    },
+    {
+      "command": [
+        "python",
+        "experimental/restricted_sum_dp.py",
+        "--p",
+        "257",
+        "--subgroup-order",
+        "16",
+        "--r",
+        "5",
+        "--expect-size",
+        "256",
+        "--format",
+        "json"
+      ],
+      "description": "Fermat quotient coverage p=257, r=M/2+1=5",
+      "exit_code": 0,
+      "id": "V1-p257-r5",
+      "ok": true,
+      "paper_item": "V1",
+      "stderr_excerpt": [],
+      "summary": {
+        "expected_size": 256,
+        "full_coverage": false,
+        "missing_values_sample": [
+          0
+        ],
+        "missing_zero_expected": true,
+        "restricted_sum_size": 256
+      }
+    },
+    {
+      "command": [
+        "python",
+        "experimental/restricted_sum_dp.py",
+        "--p",
+        "257",
+        "--subgroup-order",
+        "16",
+        "--r",
+        "9",
+        "--expect-size",
+        "256",
+        "--format",
+        "json"
+      ],
+      "description": "Fermat quotient coverage p=257, r=M+1=9",
+      "exit_code": 0,
+      "id": "V1-p257-r9",
+      "ok": true,
+      "paper_item": "V1",
+      "stderr_excerpt": [],
+      "summary": {
+        "expected_size": 256,
+        "full_coverage": false,
+        "missing_values_sample": [
+          0
+        ],
+        "missing_zero_expected": true,
+        "restricted_sum_size": 256
+      }
+    },
+    {
+      "command": [
+        "python",
+        "experimental/restricted_sum_dp.py",
+        "--p",
+        "65537",
+        "--subgroup-order",
+        "32",
+        "--r",
+        "17",
+        "--expect-size",
+        "65536",
+        "--format",
+        "json"
+      ],
+      "description": "Fermat quotient coverage p=65537, r=M+1=17",
+      "exit_code": 0,
+      "id": "V1-p65537-r17",
+      "ok": true,
+      "paper_item": "V1",
+      "stderr_excerpt": [],
+      "summary": {
+        "expected_size": 65536,
+        "full_coverage": false,
+        "missing_values_sample": [
+          0
+        ],
+        "missing_zero_expected": true,
+        "restricted_sum_size": 65536
+      }
+    },
+    {
+      "command": [
+        "python",
+        "experimental/restricted_sum_dp.py",
+        "--p",
+        "65537",
+        "--subgroup-order",
+        "32",
+        "--r",
+        "9",
+        "--expect-size",
+        "65536",
+        "--format",
+        "json"
+      ],
+      "description": "Fermat quotient coverage p=65537, r=M/2+1=9",
+      "exit_code": 0,
+      "id": "V1-p65537-r9",
+      "ok": true,
+      "paper_item": "V1",
+      "stderr_excerpt": [],
+      "summary": {
+        "expected_size": 65536,
+        "full_coverage": false,
+        "missing_values_sample": [
+          0
+        ],
+        "missing_zero_expected": true,
+        "restricted_sum_size": 65536
+      }
+    },
+    {
+      "command": [
+        "python",
+        "experimental/p257_locator_certificate.py",
+        "--format",
+        "json"
+      ],
+      "description": "p=257 locator expansion and pointwise agreement",
+      "exit_code": 0,
+      "id": "V2-p257-locator",
+      "ok": true,
+      "paper_item": "V2",
+      "stderr_excerpt": [],
+      "summary": {
+        "all_subsets_ok": true,
+        "expected_subsets": 11440,
+        "subsets_checked": 11440,
+        "support_size_range": [
+          144,
+          144
+        ],
+        "unique_slope_count": 256
+      }
+    },
+    {
+      "command": [
+        "python",
+        "experimental/q17_locator_mca/verify_q17_locator_mca.py",
+        "--check",
+        "experimental/q17_locator_mca/q17_locator_mca_certificate.json"
+      ],
+      "description": "q=17, n=16, k=8 distribution 672/673 for 9-subset sums",
+      "exit_code": 0,
+      "id": "V3-q17-pigeonhole",
+      "ok": true,
+      "paper_item": "V3",
+      "stderr_excerpt": [],
+      "stdout_excerpt": [
+        "certificate matches: experimental/q17_locator_mca/q17_locator_mca_certificate.json"
+      ],
+      "summary": {
+        "histogram": {
+          "672": 1,
+          "673": 16
+        },
+        "list_slopes_equal": true,
+        "locator_subset_count": 11440,
+        "mca_slopes_equal": true
+      }
+    },
+    {
+      "command": [
+        "python",
+        "experimental/restricted_sum_dp.py",
+        "--p",
+        "12289",
+        "--subgroup-order",
+        "256",
+        "--r",
+        "129",
+        "--expect-full",
+        "--format",
+        "json"
+      ],
+      "description": "p=12289, N=256 ladder rung full coverage",
+      "exit_code": 0,
+      "id": "V4-p12289-ladder",
+      "ok": true,
+      "paper_item": "V4",
+      "stderr_excerpt": [],
+      "summary": {
+        "expected_size": 12289,
+        "full_coverage": true,
+        "missing_values_sample": [],
+        "missing_zero_expected": false,
+        "restricted_sum_size": 12289
+      }
+    },
+    {
+      "command": [
+        "python",
+        "experimental/sieve_mechanism_certificate.py",
+        "--format",
+        "json"
+      ],
+      "description": "N=16, r=9 sieve-mechanism finite reductions",
+      "exit_code": 0,
+      "id": "V5-sieve",
+      "ok": true,
+      "paper_item": "V5",
+      "stderr_excerpt": [],
+      "summary": {
+        "all_prime_rows_ok": true,
+        "formal_count_ok": true,
+        "formal_enumeration_count": 3280,
+        "formal_formula_count": 3280,
+        "row_count": 6
+      }
+    }
+  ],
+  "determinism": "deterministic finite arithmetic; no random seed",
+  "generated_by": "experimental/verify_paperA_finite.py",
+  "object": "Paper A finite verification bundle",
+  "result": {
+    "all_ok": true,
+    "check_count": 13,
+    "passed_count": 13
+  },
+  "scope": "Appendix A V1-V5 plus adjacent deployed-field and extension arithmetic certificates. No asymptotic theorem is verified here.",
+  "status": "PROVED",
+  "theorem_problem_id": "tex/RS_disproof_v3.tex:app:verify / AGENTS A1"
+}
