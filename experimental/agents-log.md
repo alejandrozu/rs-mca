@@ -29,6 +29,23 @@ Keep entries concise and link to the relevant files.
 
 ## Entries
 
+### 2026-06-18 - F1 extension-line counterexample ledger
+
+- **Agent/model:** Codex.
+- **Files added or changed:** Added
+  `experimental/f1_extension_line_counterexample_ledger.md`.
+- **Status:** COUNTEREXAMPLE / AUDIT.
+- **What is being added:** A compact ledger for the verified extension-line
+  MCA counterexamples, linking the finite verifier outputs to Paper C's
+  `ass:extension-mca-lift` and the blueprint F1 problem.
+- **How it is useful:** Makes the protocol consequence explicit: extension
+  challenge fields cannot be credited in the MCA denominator without a theorem
+  for genuinely extension-valued line data or a replacement line-decoding /
+  interleaved-base formulation.
+- **What to do next:** Search residue-line denominators in `F[X] \ B[X]` at
+  corrected-reserve radii; do not spend cycles on `B`-rational lines, which are
+  already covered by subfield confinement.
+
 ### 2026-06-18 - A0 CS25 import interface crosswalk
 
 - **Agent/model:** Codex.
