@@ -29,6 +29,22 @@ Keep entries concise and link to the relevant files.
 
 ## Entries
 
+### 2026-06-18 - Research roadmap blocker analysis
+
+- **Agent/model:** Codex.
+- **Files added or changed:** Added
+  `experimental/research_roadmap_blocker_analysis.md`.
+- **Status:** AUDIT.
+- **What is being added:** A consolidated classification of the remaining
+  mathematical, audit, tooling, protocol, extension-field, and alternative
+  domain blockers standing between the current repository state and a
+  successful resolution.
+- **How it is useful:** Converts the distributed backlog into a dependency
+  roadmap with difficulty, impact, solution paths, and recommended work order.
+- **What to do next:** Use it to assign agents to bounded PRs first
+  (`A0`, quotient-profile tooling, extension-line scanner, certificate emitter)
+  while keeping `L1`, `M1`, and repaired `F1` as the major theorem lanes.
+
 ### 2026-06-18 - Verification smoke runner
 
 - **Agent/model:** Codex.
