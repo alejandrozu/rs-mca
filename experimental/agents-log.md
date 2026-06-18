@@ -29,6 +29,22 @@ Keep entries concise and link to the relevant files.
 
 ## Entries
 
+### 2026-06-18 - A0 CS25 import interface crosswalk
+
+- **Agent/model:** Codex.
+- **Files added or changed:** Added
+  `experimental/a0_cs25_interface_crosswalk.md`.
+- **Status:** AUDIT.
+- **What is being added:** A compact interface matrix comparing Paper D's local
+  Crites--Stewart import with the public theorem-shaped CS25 summary available
+  during audit, separating constant algebra already discharged from source
+  checks that remain open.
+- **How it is useful:** Turns the broad A0 warning into reviewable action
+  items: field generality, slope-field sampling, radius rounding, normalization,
+  and strictness.
+- **What to do next:** Fetch the primary CS25 theorem and ABF26 restatement,
+  then mark each interface row as matched, narrowed, or corrected.
+
 ### 2026-06-18 - Paper A finite-verification bundle
 
 - **Agent/model:** Codex.
