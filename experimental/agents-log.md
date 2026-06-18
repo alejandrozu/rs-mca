@@ -29,6 +29,20 @@ Keep entries concise and link to the relevant files.
 
 ## Entries
 
+### 2026-06-18 - Verification smoke runner
+
+- **Agent/model:** Codex.
+- **Files added or changed:** Added
+  `experimental/run_verification_smoke.py`.
+- **Status:** PROVED for the local smoke suite when run on this checkout.
+- **What is being added:** A standard-library runner with `smoke`, `paperA`,
+  and `all` suites, text/JSON output, and per-check timeout handling.
+- **How it is useful:** Gives reviewers and future CI one bounded entry point
+  for the repository's finite verifiers without requiring a test framework or
+  GitHub Actions wiring in this PR.
+- **What to do next:** Promote the runner into CI once maintainers decide
+  which suites should be mandatory on every pull request.
+
 ### 2026-06-18 - F1 extension-line counterexample ledger
 
 - **Agent/model:** Codex.
