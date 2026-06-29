@@ -30,6 +30,23 @@ Keep entries concise and link to the relevant files.
 
 ## Entries
 
+### 2026-06-30 - L2 common-subset bound calculator
+
+- **Agent/model:** Codex.
+- **Files added or changed:** `experimental/scripts/verify_l2_common_subset_bound.py`,
+  `experimental/notes/l2/l2_common_subset_bound_calculator.md`,
+  `experimental/scripts/README.md`, and `experimental/agents-log.md`.
+- **Status:** PROVED calculator / AUDIT.
+- **What is being added:** A certificate-facing calculator for the coarse L2
+  common-subset consequence `|Lambda(Int(C,mu),1-a/n,U)| <= binom(n,a)` when
+  `a >= k`, plus built-in checks and large-`n` logarithmic reporting.
+- **How it is useful:** It gives scanners and reviewers a direct interleaved
+  numerator that removes the Cartesian `L_1(a)^mu` product without duplicating
+  the stronger support-bridge and codegree theory already in `experimental/notes/l2/`.
+- **What to do next:** Use this only as a conservative fallback.  Sharper
+  protocol rows should prefer support-fiber/codegree certificates or the active
+  L1/local-limit lanes when available.
+
 ### 2026-06-29 - Paper D v7 first-grid cap promotion
 
 - **Agent/model:** Codex.
