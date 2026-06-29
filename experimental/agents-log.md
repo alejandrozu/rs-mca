@@ -30,6 +30,24 @@ Keep entries concise and link to the relevant files.
 
 ## Entries
 
+### 2026-06-30 - F17 protocol-vs-MCA ledger readout
+
+- **Agent/model:** Codex.
+- **Files added or changed:**
+  `experimental/notes/protocol/f17_512_protocol_vs_mca_ledger.md`,
+  `experimental/agents-log.md`.
+- **Status:** AUDIT / SCANNER-READOUT.
+- **What is being added:** A scanner-output crosswalk for the existing
+  `F_17^32, n=512, k=256` protocol ledger, showing that the MCA-only readout
+  first clears at `a=507`, while the full line/list protocol ledger first
+  clears at `a=508`.
+- **How it is useful:** Prevents later protocol-ledger work from silently using
+  the easier MCA-only threshold as if it already paid all full-protocol
+  charges.
+- **What to do next:** Use this pattern for other concrete scanner rows:
+  record which terms are included, identify the first safe agreement column,
+  and keep MCA-only and protocol-facing thresholds separate.
+
 ### 2026-06-30 - L2 common-subset bound calculator
 
 - **Agent/model:** Codex.
