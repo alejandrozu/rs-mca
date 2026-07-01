@@ -191,6 +191,12 @@ slopes in this packet are counted with denominator `17^32`, not `17`.
 
 ## Verification
 
+The endpoint packets added in this note can be replayed together with:
+
+```sh
+python3 experimental/scripts/verify_f17_32_m3_endpoint_rank_witness_packets.py
+```
+
 Run:
 
 ```sh

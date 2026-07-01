@@ -30,6 +30,31 @@ Keep entries concise and link to the relevant files.
 
 ## Entries
 
+### 2026-07-01 - F17 M3 endpoint rank-witness packets
+
+- **Agent/model:** Codex.
+- **Files added or changed:**
+  `experimental/data/hankel-regular-minor-inputs/f17_32_n512_k256_a385_rank_witness_input.json`,
+  `experimental/data/hankel-regular-minor-inputs/f17_32_n512_k256_a426_rank_witness_input.json`,
+  `experimental/data/certificates/hankel-f17-32-m3-rank-witness-a385/f17_32_n512_k256_a385_rank_witness_packet.json`,
+  `experimental/data/certificates/hankel-f17-32-m3-rank-witness-a426/f17_32_n512_k256_a426_rank_witness_packet.json`,
+  `experimental/scripts/verify_f17_32_m3_endpoint_rank_witness_packets.py`,
+  `experimental/scripts/README.md`, and `experimental/agents-log.md`.
+- **Status:** PROVED-SYNTHETIC-PACKET / AUDIT.
+- **What is being added:** The two endpoint M3 regular-window rank-witness
+  packets promised by `experimental/notes/m1/f17_32_m3_rank_witness_packet.md`
+  are now materialized and replayable: `A=385` with a degree-128 prefix minor
+  and `A=426` with a degree-87 prefix minor, both with exact synthetic root
+  union `{0}`.
+- **How it is useful:** Converts documented-but-absent endpoint artifacts into
+  checked certificate packets for the current Paper D v10 M3 lane.  The new
+  wrapper verifier checks the deterministic input generator, the regular
+  Hankel extractor, and the aperiodic eliminant packet checker for both
+  endpoints.
+- **What to do next:** Materialize the fixed top-window, proportional,
+  one-spike, and low-rank family packets referenced by the M3 notes, or mark
+  any still-missing references as planned rather than present.
+
 ### 2026-07-01 - v10 guide and site metadata sync
 
 - **Agent/model:** Codex.
