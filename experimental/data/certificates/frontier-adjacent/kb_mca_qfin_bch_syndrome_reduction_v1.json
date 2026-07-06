@@ -1,0 +1,70 @@
+{
+  "bch_syndrome_reduction": {
+    "binary_slice": "Q-fin is not the q-ary coset weight distribution; it is the binary constant-weight slice {0,1}^n with weight m.",
+    "domain": "D = alpha * mu_n, n | p-1",
+    "indicator_form": "For M subset D, the power-prefix vector is the BCH syndrome H 1_M, where H_{i,x}=x^i for 1<=i<=w.",
+    "mds_check": "Because w < n < p and the x in D are distinct, every w columns of H form a nonsingular Vandermonde matrix. The ambient linear code is an [n,n-w,w+1] generalized Reed-Solomon code over F_p.",
+    "primitive_target": "After quotient-rung charges, the remaining targets have gcd(n,{i:z_i != 0})=1."
+  },
+  "claim": "The primitive Q-fin wall is exactly a binary constant-weight BCH/GRS syndrome max-fiber problem; soft packing, singleton-style MDS support relaxation, and low/fixed moments miss the deployed finite constant by enormous margins.",
+  "collision_rigidity": {
+    "interpretation": "Every fiber is a constant-weight family with pairwise intersection at most k, but this packing fact alone is far too weak.",
+    "max_pairwise_intersection_equals_k": true,
+    "max_pairwise_intersection_in_one_fiber": 1048576,
+    "min_exchange_size_for_distinct_same_fiber_supports": 67472,
+    "same_prefix_implies_locator_difference_degree_at_most": 1048576
+  },
+  "next_valid_closing_routes": [
+    "prove primitive binary BCH-syndrome max-fiber flatness directly",
+    "prove exchange-compression forcing every heavy primitive fiber into a paid quotient/planted/tangent branch",
+    "prove a high-moment or tail hierarchy up to r comparable to w with explicit constants",
+    "produce a primitive syndrome whose binary weight-m fiber exceeds K_rem times the average"
+  ],
+  "non_claims": [
+    "does not prove primitive max-orbit flatness",
+    "does not prove U(1116048) <= B*",
+    "does not change the frontier edge",
+    "does not certify any finite safe row"
+  ],
+  "payload_sha256": "a229109d7b2275cad7fd40116cd04d4875c4e937a191d3a5087c15513f9106b9",
+  "row": {
+    "B_star": 274980728111395087,
+    "K_raw": 4807520,
+    "K_rem_primitive_after_charge": 4771896,
+    "k": 1048576,
+    "log2_B_star": 57.932108124696,
+    "log2_K_raw": 22.196861428728,
+    "log2_K_rem": 22.186131170212,
+    "log2_average_fiber": 35.735246414552,
+    "m_safe": 1116048,
+    "n": 2097152,
+    "nonprimitive_charge_from_rung_audit": 35624,
+    "p": 2130706433,
+    "p_minus_1_over_n": 1016,
+    "w_safe": 67471
+  },
+  "schema_version": "cap25-v13-qfin-bch-syndrome-reduction-v1",
+  "soft_route_failures": {
+    "fixed_or_low_moment_conversion": {
+      "interpretation": "Any route of the schematic form max <= avg*p^(w/r) needs r around 9.4e4, so r=2,3,4 tail ledgers cannot close the finite adjacent row by themselves.",
+      "moment_order_needed_for_K_raw": 94196,
+      "moment_order_needed_for_K_rem": 94241
+    },
+    "johnson_packing_from_min_distance": {
+      "log2_ball_upper_bound_used": 430063.563,
+      "log2_fiber_upper_bound": 1660809.716793,
+      "misses_by_bits": 1660751.795415,
+      "packing_radius": 33735,
+      "ratio_to_average_bits": 1660773.981546,
+      "required_ratio_bits": 22.186131
+    },
+    "singleton_or_fix_w_coordinate_relaxation": {
+      "log2_relaxed_fiber_bound": 2028051.906904,
+      "misses_by_bits": 2027993.985527,
+      "ratio_to_average_bits": 2028016.171658,
+      "required_ratio_bits": 22.186131
+    }
+  },
+  "status": "AUDIT / REDUCTION / ROUTE_CUT",
+  "wall_id": "CAP25-V13-QFIN-PRIMITIVE-MAX-ORBIT-FLATNESS-KB-MCA-1116048"
+}

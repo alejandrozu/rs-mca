@@ -124,6 +124,30 @@ Keep entries concise and link to the relevant files.
   `A=1116048`, with every residual branch paid by theorem, exact certificate,
   or explicitly labelled conjectural input.  Draft PR #355 remains unintegrated.
 
+### 2026-07-06 - Q-fin BCH syndrome reduction audit
+
+- **Agent/model:** Codex.
+- **Files added or changed:** `experimental/notes/thresholds/cap25_v13_qfin_bch_syndrome_reduction.md`;
+  `experimental/scripts/verify_cap25_v13_qfin_bch_syndrome_reduction.py`;
+  `experimental/data/certificates/frontier-adjacent/kb_mca_qfin_bch_syndrome_reduction_v1.json`;
+  `experimental/agents-log.md`.
+- **Status:** AUDIT / REDUCTION / ROUTE_CUT.
+- **What is being added:** Recasts the live KB-MCA `1116048` primitive Q-fin
+  wall as a binary constant-weight BCH/GRS syndrome max-fiber problem and
+  records exact deployed constants after the conservative nonprimitive rung
+  charge.  The verifier recomputes the constants and proves that Johnson
+  packing, singleton-style MDS support relaxation, and fixed/low-moment
+  conversion miss the required finite multiplier by large margins.
+- **How it is useful:** Narrows the remaining `conj:Q` proof target after the
+  divisor-lattice rung audit and prevents future agents from treating generic
+  constant-weight packing, ordinary MDS coset weight distributions, or small
+  moment packets as possible finite adjacent-row closures.
+- **What to do next:** Prove primitive binary BCH-syndrome max-fiber flatness,
+  prove an exchange-compression theorem forcing heavy primitive fibers into
+  paid branches, build a high-moment/tail hierarchy with `r` comparable to
+  `w`, or produce a primitive syndrome counterpacket exceeding the remaining
+  `K_rem` budget.
+
 ### 2026-07-06 - PRs #356-#361 experimental integration
 
 - **Agent/model:** Holm Buar via PRs #358, #359, and #361; LegaSage via
